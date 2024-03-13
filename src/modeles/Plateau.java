@@ -21,11 +21,6 @@ public class Plateau {
             }
         }
 
-        for (int i = 1; i < valeursDejaGenerees.length; i++) {
-            if (valeursDejaGenerees[i] == 1) {
-                System.out.println(i);
-            }
-        }
     }
 
     public CaseSpeciale[] getCaseSpeciales() {

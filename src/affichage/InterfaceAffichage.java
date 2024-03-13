@@ -12,6 +12,7 @@ public interface InterfaceAffichage {
     public void afficherCase(CaseSpeciale c);
     public void afficherToucheSaisie();
     public void afficherString(String phrase);
+    public void touchePress();
 
 
 

@@ -3,24 +3,38 @@ package partie;
 import affichage.Affichage;
 import joueur.Nom;
 import joueur.Pirate;
+import modeles.Des;
 import modeles.Plateau;
+
 
 
 public class Jeu {
     private Pirate[] joueurs;
     private Affichage affichage;
     private Plateau plateau;
+    private Des des;
 
 
 
 
-    //getters setters
-
-    public Jeu(Affichage affichage, Plateau plateau , Pirate[] joueurs) {
-        //this.joueurActuel = new Pirate(Nom.NO_JOUEUR, 0);
+    //getters setters constructeurs
+    public Jeu(){
+        Des des = new Des(6);
+        Affichage affichage = new Affichage();
+        Plateau plateau = new Plateau();
+        Pirate[] joueurs = new Pirate[2];
+        joueurs[0] = new Pirate(Nom.BILL , 5);
+        joueurs[1] = new Pirate(Nom.JACK, 5) ;
         this.affichage = affichage;
         this.plateau = plateau;
         this.joueurs = joueurs;
+        this.des = des ;
+
+
+    }
+
+    public Des getDes(){
+        return des ;
     }
     public Plateau getPlateau() {
         return plateau;
@@ -47,16 +61,28 @@ public class Jeu {
 
     //methodes
     //voir diag de sequence
-    public void creerJeu( ){
-
-    }
-    public Integer lancerDes(Pirate joueur) {
+    public void lancerDes(Pirate joueur) {
         getAffichage().afficherString("Le pirate "+joueur.getNom()+" s'aprette a à lancer les dès :");
-        getAffichage().afficherToucheSaisie();
-        return 0 ;
+        getAffichage().touchePress();
+        getAffichage().afficherResultatDes(getDes().resultatDes());
 
 
     }
+
+
+
+    public void lancerJeu(){
+        getAffichage().afficherDebutPartie();
+        while (getJoueurs()[0].getPostion() != 30 && getJoueurs()[1].getPostion()!= 30) {
+            lancerDes(joueurs[0]);
+            lancerDes(joueurs[1]);
+
+        }
+
+        getAffichage().afficherFinPartie();
+
+    }
+
 
 
 
