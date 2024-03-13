@@ -4,33 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="13/03 avancement sur creer jeu, check diagramme de sequence detaille de la fonctionnalité avec m chaudet">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10a187c84e6e8c45a840acec7e1ee44f42e8c3d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38a995aeebc9bca655e761fd91051876f2b693fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/649d5e52224c25e9830fc692cba68ce7527beec5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6caf8c90c092e3bee5b50a73c0705a2e68a089d1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6caf8c90c092e3bee5b50a73c0705a2e68a089d1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/72d21e2e46fec63d3c537035291fa4fa395d6c98" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/964d19d53aa008dee692f898a5897959975fca0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a559d8a57aefb7e6ada56000d81fbf3b11860576" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723" afterDir="false" />
+    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3ccf8252d8fe3bf9bfcc93b11a5b07e57ce1b61" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/0/10a187c84e6e8c45a840acec7e1ee44f42e8c3d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/8/38a995aeebc9bca655e761fd91051876f2b693fd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/4/649d5e52224c25e9830fc692cba68ce7527beec5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/2/72d21e2e46fec63d3c537035291fa4fa395d6c98" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/6/964d19d53aa008dee692f898a5897959975fca0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/5/a559d8a57aefb7e6ada56000d81fbf3b11860576" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f3ccf8252d8fe3bf9bfcc93b11a5b07e57ce1b61" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/InterfaceAffichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/InterfaceAffichage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Pirate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Pirate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Plateau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partie/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/partie/Jeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_fonctionnels/Controle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_fonctionnels/Controle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +110,7 @@
       <workItem from="1710321741213" duration="107000" />
       <workItem from="1710321908605" duration="253000" />
       <workItem from="1710322168995" duration="5228000" />
-      <workItem from="1710333859850" duration="5179000" />
+      <workItem from="1710333859850" duration="8249000" />
     </task>
     <task id="LOCAL-00001" summary="creation">
       <created>1709714520380</created>
@@ -182,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710327393489</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu">
+      <created>1710339345099</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710339345099</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +190,7 @@
     <MESSAGE value="11/03 : anciens fichiers recrées" />
     <MESSAGE value="test commit" />
     <MESSAGE value="13/03 avancement sur creer jeu, check diagramme de sequence detaille de la fonctionnalité avec m chaudet" />
-    <option name="LAST_COMMIT_MESSAGE" value="13/03 avancement sur creer jeu, check diagramme de sequence detaille de la fonctionnalité avec m chaudet" />
+    <MESSAGE value="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu" />
   </component>
 </project>

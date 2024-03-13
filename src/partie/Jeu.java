@@ -17,7 +17,7 @@ public class Jeu {
 
 
 
-    //getters setters constructeurs
+    //getters setters constructeur
     public Jeu(){
         Des des = new Des(6);
         Affichage affichage = new Affichage();
@@ -39,20 +39,11 @@ public class Jeu {
     public Plateau getPlateau() {
         return plateau;
     }
-    public void setPlateau(Plateau plateau) {
-        this.plateau = plateau;
-    }
     public Affichage getAffichage() {
         return affichage;
     }
-    public void setAffichage(Affichage affichage) {
-        this.affichage = affichage;
-    }
     public Pirate[] getJoueurs() {
         return joueurs;
-    }
-    public void setJoueurs(Pirate[] joueurs) {
-        this.joueurs = joueurs;
     }
     public int getNombreJoueurs() {
         return joueurs.length;
@@ -69,11 +60,18 @@ public class Jeu {
 
     }
 
-
+    public boolean verifierGagnant(Pirate joueur) {
+        if (joueur.getPostion() == 30) {
+            getAffichage().afficherString("Le pirate "+joueur.getNom()+" a gagné!");
+            return true;
+        }
+        return false;
+    }
 
     public void lancerJeu(){
         getAffichage().afficherDebutPartie();
-        while (getJoueurs()[0].getPostion() != 30 && getJoueurs()[1].getPostion()!= 30) {
+        while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
+
             lancerDes(joueurs[0]);
             lancerDes(joueurs[1]);
 

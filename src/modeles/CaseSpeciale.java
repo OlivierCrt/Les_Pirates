@@ -8,7 +8,7 @@ public abstract class CaseSpeciale {
    }
 
    //methodes
-   Integer getNumero() {
+   public Integer getNumero() {
       return numero;
    }
 

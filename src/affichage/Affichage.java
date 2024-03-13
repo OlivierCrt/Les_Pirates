@@ -17,13 +17,15 @@ public final class Affichage implements InterfaceAffichage {
 
     @Override
     public void afficherResultatDes(int result) {
+        System.out.print("Le resultat du lancer est ");
         System.out.println(result);
+        System.out.println("--------------------------------");
 
     }
 
     @Override
     public void afficherCase(CaseSpeciale c) {
-
+        System.out.println(c.getNumero());
 
 
     }
