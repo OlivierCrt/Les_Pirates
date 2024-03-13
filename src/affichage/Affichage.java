@@ -1,7 +1,7 @@
 package affichage;
-import affichage.InterfaceAffichage;
-import modeles.Case;
-public class Affichage implements InterfaceAffichage {
+import modeles.CaseSpeciale;
+public final class Affichage implements InterfaceAffichage {
+
     @Override
     public void afficherDebutPartie() {
 
@@ -19,7 +19,7 @@ public class Affichage implements InterfaceAffichage {
     }
 
     @Override
-    public void afficherCase(Case c) {
+    public void afficherCase(CaseSpeciale c) {
 
 
 

@@ -1,6 +1,6 @@
 package affichage;
 
-import modeles.Case;
+import modeles.CaseSpeciale;
 
 public interface InterfaceAffichage {
     //attribut
@@ -9,7 +9,7 @@ public interface InterfaceAffichage {
     public void afficherFinPartie();
     public void afficherResultatDes(int result);
 
-    public void afficherCase(Case c);
+    public void afficherCase(CaseSpeciale c);
     public void afficherToucheSaisie();
     public void afficherString(String phrase);
 

@@ -46,10 +46,12 @@ public class Jeu {
 
 
     //methodes
+    //voir diag de sequence
+    public void creerJeu( ){
 
-
+    }
     public Integer lancerDes(Pirate joueur) {
-        getAffichage().afficherString("yo");
+        getAffichage().afficherString("Le pirate "+joueur.getNom()+" s'aprette a à lancer les dès :");
         getAffichage().afficherToucheSaisie();
         return 0 ;
 
