@@ -2,12 +2,15 @@ package modeles;
 import joueur.Pirate ;
 public final class Canon extends CaseSpeciale {
 
+
     public Canon(int numero) {
-        super(numero);
+        super(numero,"Canon");
     }
 
 
-    public void actionCanon(Pirate joueurActuel , Pirate joueur2){
+
+
+    public void actionCaseSpeciale(Pirate joueurActuel , Pirate joueur2){
         if (joueurActuel.getPostion() < joueur2.getPostion()){
             joueurActuel.setPostion(joueur2.getPostion());//Le joueur actuel rejoint le joueur 2
         }
@@ -19,5 +22,9 @@ public final class Canon extends CaseSpeciale {
 
 
 
+    }
+
+    public String getNomCase(){
+        return this.nomCase;
     }
 }

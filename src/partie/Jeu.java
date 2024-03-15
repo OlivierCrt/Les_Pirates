@@ -99,26 +99,56 @@ public class Jeu {
 
     }
 
+    public void lancerCaseSpeciale(Pirate precedent){
+        boolean estDedans  = false;
+        for (int i =0 ; i<getPlateau().getCaseSpeciales().length ; i++){
+            if(getJoueurActuel().getPostion() == getPlateau().getCaseSpeciales()[i].getNumero()){
+                estDedans = true ;
+                getAffichage().afficherString(getJoueurActuel().getNom() + " tu te trouves sur une case "+ getPlateau().getCaseSpeciales()[i].getNomCase() +"!\n");
+                if( getPlateau().getCaseSpeciales()[i].getNomCase() == "Canon"){//je met cette condition uniquement pour l affichage
+                    if(getJoueurActuel().getPostion() <precedent.getPostion()){
+                        getAffichage().afficherString("Ton adversaire est devant toi tu te propulses à l'aide du canon ;)\n");
+                        getPlateau().getCaseSpeciales()[i].
+                    }
+                    else {
+                        getAffichage().afficherString("Ton adversaire est derriere toi,tu bombardes ce jeune mousse ;)\n");
+                    }
 
+                }
+            }
+        }
+
+    }
 
 
     public void lancerJeu(){
         getAffichage().afficherDebutPartie();
 
         //////////////////////////////////////////
+        Pirate JoueurPrecedent=joueurs[1];
         //Tour de jeu
         while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
             getAffichage().afficherApercuPlateau(getJoueurs()); // Afficher l'aperçu du plateau
-            // Partie 0 de mon schema immobilisation à implementer
-            //Partie 1
-            int resDes =lancerDes(getJoueurActuel());
-            System.out.println("test :"+ resDes);
-            //partie 2 avancer
-            avancerJoueur(joueurActuel,resDes);
-            //partie 3 case sp à implementer
+            // Partie 0 de mon schema immobilisation à implementer--> OK
+            if (joueurActuel.getTourImmobile()  ==  0) {
+                //Partie 1
+                int resDes =lancerDes(getJoueurActuel());
+                //partie 2 avancer
+                avancerJoueur(getJoueurActuel(),resDes);
+                //partie 3 case sp à implementer
+                lancerCaseSpeciale(JoueurPrecedent);
+
+            }
+            else {
+                getAffichage().afficherString("\u001B[31mNON "+ getJoueurActuel().getNom() + " tu es immobilisé pour ce tour!\n\u001B[0m");
+                getJoueurActuel().setTourImmobile(getJoueurActuel().getTourImmobile()-1);
+                getAffichage().afficherString("Il te reste encore "+ getJoueurActuel().getTourImmobile() +" tour(s) à attendre, patience...");
+            }
+
 
 
             //fin de tour
+            JoueurPrecedent=getJoueurActuel();
             changementJoueuractuel();
         }
         //////////////////////////////////////////

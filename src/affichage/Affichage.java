@@ -41,6 +41,7 @@ public final class Affichage implements InterfaceAffichage {
         System.out.print(phrase);
     }
 
+
     @Override
     public void touchePress(){
         Scanner scanner = new Scanner(System.in);
@@ -69,10 +70,15 @@ public final class Affichage implements InterfaceAffichage {
                 }
                 // Affichage de la case avec ou sans joueur
                 if (joueurpresent) {
-                    System.out.print("[" + nomjoueurPresent + " ]");
+                    if(nomjoueurPresent == "BILL"){
+                    System.out.print("[\u001B[34m" + nomjoueurPresent + " \u001B[0m]");}
+                    else{
+                        System.out.print("[\u001B[31m" + nomjoueurPresent + " \u001B[0m]");}
+
+                    }
 
 
-                } else {
+                else {
                     System.out.print("[     ]");
                 }
             }
