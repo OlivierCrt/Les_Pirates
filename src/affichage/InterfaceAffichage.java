@@ -1,5 +1,6 @@
 package affichage;
 
+import joueur.Pirate;
 import modeles.CaseSpeciale;
 
 public interface InterfaceAffichage {
@@ -13,6 +14,7 @@ public interface InterfaceAffichage {
     public void afficherToucheSaisie();
     public void afficherString(String phrase);
     public void touchePress();
+    public void afficherApercuPlateau(Pirate[] joueurs);
 
 
 

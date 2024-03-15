@@ -104,9 +104,11 @@ public class Jeu {
 
     public void lancerJeu(){
         getAffichage().afficherDebutPartie();
+
         //////////////////////////////////////////
         //Tour de jeu
         while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
+            getAffichage().afficherApercuPlateau(getJoueurs()); // Afficher l'aperçu du plateau
             // Partie 0 de mon schema immobilisation à implementer
             //Partie 1
             int resDes =lancerDes(getJoueurActuel());
@@ -123,6 +125,7 @@ public class Jeu {
         getAffichage().afficherFinPartie();
 
     }
+
 
 
 

@@ -1,5 +1,6 @@
 package affichage;
 import modeles.CaseSpeciale;
+import joueur.Pirate;
 import java.util.Scanner;
 public final class Affichage implements InterfaceAffichage {
 
@@ -47,4 +48,36 @@ public final class Affichage implements InterfaceAffichage {
         scanner.nextLine(); // l'utilisateur appuie sur "Entrée"
 
     }
+
+    @Override
+    public void afficherApercuPlateau(Pirate[] joueurs) {
+        String nomjoueurPresent ="";
+        System.out.println("Aperçu du plateau de jeu :");
+
+        // Boucle pour parcourir chaque ligne
+        for (int i = 0; i < 6; i++) {
+            // Boucle pour parcourir chaque colonne
+            for (int j = 0; j < 5; j++) {
+                // Vérifier si un joueur est présent sur cette case
+                boolean joueurpresent = false;
+                for (Pirate joueur : joueurs) {
+                    if (joueur.getPostion() == i * 5 + j + 1) {
+                        joueurpresent = true;
+                        nomjoueurPresent = String.valueOf(joueur.getNom());
+                        break;
+                    }
+                }
+                // Affichage de la case avec ou sans joueur
+                if (joueurpresent) {
+                    System.out.print("[" + nomjoueurPresent + " ]");
+
+
+                } else {
+                    System.out.print("[     ]");
+                }
+            }
+            System.out.println(); // Passer à la ligne suivante après chaque ligne du plateau
+        }
+    }
+
 }
