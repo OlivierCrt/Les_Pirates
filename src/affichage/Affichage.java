@@ -43,7 +43,7 @@ public final class Affichage implements InterfaceAffichage {
     @Override
     public void touchePress(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Appuyez sur une touche pour continuer...");
+        System.out.println("Appuyez sur entrée pour continuer...");
         scanner.nextLine(); // l'utilisateur appuie sur "Entrée"
 
     }

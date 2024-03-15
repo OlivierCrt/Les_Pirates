@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu">
+    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="diagramme sequentiel lancer jeu fait, sans case spéciale, avancement sur lancer jeu classique, boucle de lancer de des  OK">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0c4ecfa71c512512334ec2c512f673b3b2945af" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0c4ecfa71c512512334ec2c512f673b3b2945af" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/joueur/Pirate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Pirate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modeles/Canon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Canon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partie/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/partie/Jeu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +115,7 @@
       <workItem from="1710321741213" duration="107000" />
       <workItem from="1710321908605" duration="253000" />
       <workItem from="1710322168995" duration="5228000" />
-      <workItem from="1710333859850" duration="8249000" />
+      <workItem from="1710333859850" duration="10974000" />
     </task>
     <task id="LOCAL-00001" summary="creation">
       <created>1709714520380</created>
@@ -168,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710339345099</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="diagramme sequentiel lancer jeu fait, sans case spéciale, avancement sur lancer jeu classique, boucle de lancer de des  OK">
+      <created>1710345389473</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710345389473</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +203,7 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="13/03 avancement sur creer jeu, check diagramme de sequence detaille de la fonctionnalité avec m chaudet" />
     <MESSAGE value="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fonctionnlité creer jeu operationnelle travail diagramme sequence de lancerjeu" />
+    <MESSAGE value="diagramme sequentiel lancer jeu fait, sans case spéciale, avancement sur lancer jeu classique, boucle de lancer de des  OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="diagramme sequentiel lancer jeu fait, sans case spéciale, avancement sur lancer jeu classique, boucle de lancer de des  OK" />
   </component>
 </project>

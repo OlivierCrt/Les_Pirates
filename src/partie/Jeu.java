@@ -13,6 +13,7 @@ public class Jeu {
     private Affichage affichage;
     private Plateau plateau;
     private Des des;
+    private Pirate joueurActuel ;
 
 
 
@@ -29,6 +30,7 @@ public class Jeu {
         this.plateau = plateau;
         this.joueurs = joueurs;
         this.des = des ;
+        this.joueurActuel = joueurs[0] ; //on commence avec le joueur 1
 
 
     }
@@ -47,6 +49,9 @@ public class Jeu {
     }
     public int getNombreJoueurs() {
         return joueurs.length;
+    }
+    public int setJoueurActuel(Pirate joueur){
+        this.joueurActuel = joueur ;
     }
 
 
@@ -67,16 +72,35 @@ public class Jeu {
         }
         return false;
     }
+    public void changementJoueuractuel (){
+        if(joueurActuel == joueurs[0]){
+            setJoueurActuel(joueurs[1]);
+        }
+        else {
+            setJoueurActuel(joueurs[0]);
+        }
+    }
+
+
+
 
     public void lancerJeu(){
         getAffichage().afficherDebutPartie();
+        //////////////////////////////////////////
+        //Tour de jeu
         while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
+            // Partie 0 de mon schema
 
+
+
+            //Partie 1
             lancerDes(joueurs[0]);
             lancerDes(joueurs[1]);
+            //fin de tour
+
 
         }
-
+        //////////////////////////////////////////
         getAffichage().afficherFinPartie();
 
     }
