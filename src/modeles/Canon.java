@@ -2,7 +2,7 @@ package modeles;
 import joueur.Pirate ;
 public final class Canon extends CaseSpeciale {
 
-    public Canon(String action, int numero) {
+    public Canon(int numero) {
         super(numero);
     }
 

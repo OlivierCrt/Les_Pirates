@@ -11,7 +11,7 @@ public class Pirate {
     public Pirate(Nom nom, Integer vies) {
         this.nom = nom;
         this.vies = vies;
-        this.postion = 0;
+        this.postion = 1;
         this.tourImmobile = 0 ;
     }
     public Nom getNom() {

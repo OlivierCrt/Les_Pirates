@@ -16,7 +16,7 @@ public class Plateau {
             int randomInt = secureRandom.nextInt(30) + 1; // de 1 à 30
             if (valeursDejaGenerees[randomInt] == 0) {
                 valeursDejaGenerees[randomInt] = 1;
-                caseSpeciales[nombreDeValeursUniques] = new Canon("CANON" ,randomInt); // Pour l'instant case neutre
+                caseSpeciales[nombreDeValeursUniques] = new Canon(randomInt); // Pour l'instant case neutre
                 nombreDeValeursUniques++;
             }
         }

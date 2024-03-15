@@ -50,24 +50,29 @@ public class Jeu {
     public int getNombreJoueurs() {
         return joueurs.length;
     }
-    public int setJoueurActuel(Pirate joueur){
+    public void setJoueurActuel(Pirate joueur){
         this.joueurActuel = joueur ;
+    }
+    public Pirate getJoueurActuel(){
+        return joueurActuel;
     }
 
 
     //methodes
     //voir diag de sequence
-    public void lancerDes(Pirate joueur) {
-        getAffichage().afficherString("Le pirate "+joueur.getNom()+" s'aprette a à lancer les dès :");
+    public int lancerDes(Pirate joueur) {
+        getAffichage().afficherString("Le pirate "+joueur.getNom()+" s'aprette a à lancer les dès :\n");
         getAffichage().touchePress();
-        getAffichage().afficherResultatDes(getDes().resultatDes());
+        int res =getDes().resultatDes();
+        getAffichage().afficherResultatDes(res);
+        return (res);
 
 
     }
 
     public boolean verifierGagnant(Pirate joueur) {
         if (joueur.getPostion() == 30) {
-            getAffichage().afficherString("Le pirate "+joueur.getNom()+" a gagné!");
+            getAffichage().afficherString("Le pirate "+joueur.getNom()+" a gagné!\n");
             return true;
         }
         return false;
@@ -80,6 +85,19 @@ public class Jeu {
             setJoueurActuel(joueurs[0]);
         }
     }
+    public void avancerJoueur(Pirate joueur,int avance){
+        if(joueur.getPostion()+avance <= 30) {
+            joueur.setPostion(joueur.getPostion() + avance);
+        }
+        else{
+            joueur.setPostion(60 -( joueur.getPostion() + avance));
+        }
+        getAffichage().afficherString("Le pirate "+getJoueurActuel().getNom() + " avance de "+ avance + " cases\n");
+        getAffichage().afficherString("Il se trouve desormais sur la case numero "+joueur.getPostion()+"\n");
+
+
+
+    }
 
 
 
@@ -89,16 +107,17 @@ public class Jeu {
         //////////////////////////////////////////
         //Tour de jeu
         while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
-            // Partie 0 de mon schema
-
-
-
+            // Partie 0 de mon schema immobilisation à implementer
             //Partie 1
-            lancerDes(joueurs[0]);
-            lancerDes(joueurs[1]);
+            int resDes =lancerDes(getJoueurActuel());
+            System.out.println("test :"+ resDes);
+            //partie 2 avancer
+            avancerJoueur(joueurActuel,resDes);
+            //partie 3 case sp à implementer
+
+
             //fin de tour
-
-
+            changementJoueuractuel();
         }
         //////////////////////////////////////////
         getAffichage().afficherFinPartie();

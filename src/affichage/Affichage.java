@@ -25,7 +25,7 @@ public final class Affichage implements InterfaceAffichage {
 
     @Override
     public void afficherCase(CaseSpeciale c) {
-        System.out.println(c.getNumero());
+        System.out.println("case numéro "+ c.getNumero());
 
 
     }
@@ -37,7 +37,7 @@ public final class Affichage implements InterfaceAffichage {
 
     @Override
     public void afficherString(String phrase){
-        System.out.println(phrase);
+        System.out.print(phrase);
     }
 
     @Override

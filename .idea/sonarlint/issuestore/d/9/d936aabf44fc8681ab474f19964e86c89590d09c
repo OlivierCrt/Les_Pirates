@@ -1,9 +1,11 @@
 
+h
+java:S1192@"KDefine a constant instead of duplicating this literal "Le pirate " 3 times.(ÚÄ”«8ƒÙ°–ä1
 T
-java:S1117"7Rename "des" which hides the field declared at line 15.(—Êÿ8ô¤ô“ä1
+java:S1117"7Rename "des" which hides the field declared at line 15.(—Êÿ8™Ù°–ä1
 Z
-java:S1117"=Rename "affichage" which hides the field declared at line 13.(Æ®Û8ö¤ô“ä1
+java:S1117"=Rename "affichage" which hides the field declared at line 13.(Æ®Û8›Ù°–ä1
 W
-java:S1117";Rename "plateau" which hides the field declared at line 14.(æåŒm8÷¤ô“ä1
+java:S1117";Rename "plateau" which hides the field declared at line 14.(æåŒm8›Ù°–ä1
 ]
-java:S1117";Rename "joueurs" which hides the field declared at line 12.(ÛäĞşÿÿÿÿ8ø¤ô“ä1
+java:S1117";Rename "joueurs" which hides the field declared at line 12.(ÛäĞşÿÿÿÿ8œÙ°–ä1
