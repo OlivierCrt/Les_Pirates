@@ -55,11 +55,8 @@ public final class Affichage implements InterfaceAffichage {
         String nomjoueurPresent ="";
         System.out.println("Aperçu du plateau de jeu :");
 
-        // Boucle pour parcourir chaque ligne
         for (int i = 0; i < 6; i++) {
-            // Boucle pour parcourir chaque colonne
             for (int j = 0; j < 5; j++) {
-                // Vérifier si un joueur est présent sur cette case
                 boolean joueurpresent = false;
                 for (Pirate joueur : joueurs) {
                     if (joueur.getPostion() == i * 5 + j + 1) {

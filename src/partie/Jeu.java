@@ -99,22 +99,14 @@ public class Jeu {
 
     }
 
-    public void lancerCaseSpeciale(Pirate precedent){
+  /  public void lancerCaseSpeciale(Pirate precedent){
         boolean estDedans  = false;
         for (int i =0 ; i<getPlateau().getCaseSpeciales().length ; i++){
             if(getJoueurActuel().getPostion() == getPlateau().getCaseSpeciales()[i].getNumero()){
                 estDedans = true ;
-                getAffichage().afficherString(getJoueurActuel().getNom() + " tu te trouves sur une case "+ getPlateau().getCaseSpeciales()[i].getNomCase() +"!\n");
-                if( getPlateau().getCaseSpeciales()[i].getNomCase() == "Canon"){//je met cette condition uniquement pour l affichage
-                    if(getJoueurActuel().getPostion() <precedent.getPostion()){
-                        getAffichage().afficherString("Ton adversaire est devant toi tu te propulses à l'aide du canon ;)\n");
-                        getPlateau().getCaseSpeciales()[i].
-                    }
-                    else {
-                        getAffichage().afficherString("Ton adversaire est derriere toi,tu bombardes ce jeune mousse ;)\n");
-                    }
+                action =
+                getAffichage().afficherString(getJoueurActuel().getNom() + " tu te trouves sur une case "+ getPlateau().getCaseSpeciales()[i].actionCaseSpeciale() +"!\n");
 
-                }
             }
         }
 
@@ -136,7 +128,7 @@ public class Jeu {
                 //partie 2 avancer
                 avancerJoueur(getJoueurActuel(),resDes);
                 //partie 3 case sp à implementer
-                lancerCaseSpeciale(JoueurPrecedent);
+                //lancerCaseSpeciale(JoueurPrecedent);
 
             }
             else {

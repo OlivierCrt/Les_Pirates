@@ -1,22 +1,21 @@
 package modeles;
+import joueur.Pirate ;
 
-import joueur.Pirate;
+
 
 public abstract class CaseSpeciale {
    //attributs
    private int numero ;
-   String nomCase ;
-   public CaseSpeciale(int numero,String nomCase){
+   protected CaseSpeciale(int numero){
       this.numero = numero ;
-      this.nomCase = nomCase ;
+
    }
 
    //methodes
-   public Integer getNumero() {
+   public int getNumero() {
       return numero;
    }
+   public abstract Action actionCaseSpeciale(Pirate joueur1,Pirate joueur2);
 
-   public String getNomCase() {
-      return nomCase;
-   }
+
 }

@@ -1,14 +1,14 @@
 package joueur;
 
-import joueur.Nom;
+
 
 public class Pirate {
     private Nom nom;
-    private Integer vies;
-    private Integer postion;
+    private int vies;
+    private int postion;
     private int tourImmobile ;
 
-    public Pirate(Nom nom, Integer vies) {
+    public Pirate(Nom nom, int vies) {
         this.nom = nom;
         this.vies = vies;
         this.postion = 1;
@@ -26,20 +26,20 @@ public class Pirate {
         this.tourImmobile = tourImmobile;
     }
 
-    public Integer getPostion() {
+    public int getPostion() {
         return postion;
     }
     public void setPostion(int positionNouvelle){
         this.postion = positionNouvelle ;
     }
-    public Integer getVies() {
+    public int getVies() {
 
         return vies;
     }
     public void setNom(Nom nom) {
         this.nom = nom;
     }
-    public void setVies(Integer vies) {
+    public void setVies(int vies) {
         this.vies = vies;
     }
     public boolean isImmobile(){
