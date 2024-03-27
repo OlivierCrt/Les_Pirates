@@ -56,8 +56,6 @@ Q.idea/sonarlint/securityhotspotstore/d/9/d936aabf44fc8681ab474f19964e86c89590d0
 Q.idea/sonarlint/securityhotspotstore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723,4\5\45ebe027d25b76b4982c629db199ba8b7e99efe7
 F
 src/modeles/Canon.java,d\0\d0c4ecfa71c512512334ec2c512f673b3b2945af
-V
-&src/test_fonctionnels/TestPlateau.java,3\7\37b2b6958340a99a1142c1d869dd3cdf346ad06d
 Å
 Q.idea/sonarlint/securityhotspotstore/6/c/6caf8c90c092e3bee5b50a73c0705a2e68a089d1,f\5\f5cd4cc50b209613898795b99f668cfb5703e432
 Å

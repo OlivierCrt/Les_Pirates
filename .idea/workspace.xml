@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="case spéciale bientot finis , la ction dans case ou dans jeu ;( jsp">
-      <change afterPath="$PROJECT_DIR$/src/modeles/VentFavorable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/022d2e05e7dc72030560cf16012fc48050c09015" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/6/066c4ac35d67c1c609c7221239e28c0c30cdd3cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2b967792f90f4d69bcd16d8f10ceaefd849ad9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2b967792f90f4d69bcd16d8f10ceaefd849ad9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/205483cc319dc4de60e8ada636d960e5acbd8880" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/2898220b8da155fc68b5baea6fe0bb5a8c8ba1e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/d/2dc55955119dbbc18841e2fe90ac818a539ec350" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2fada1213964dd5172d831981aee16384a65a841" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bba1a869bcf39ec9a7b48c56da235de402e11e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/5880a1510e21b9e74319923f3eef0d3c3a414ab6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/792978651b0d7c6e535e715e3c9a3be5bb42cd4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af001d70ebb2bdc50171ddf779a486a50c8f2723" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b7751255635c69564f9daccc2daac77a03919a98" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccbaa486ff8fc5f6be4179268732c9c06b8cd58d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2df7e007b4e5e04313275eb2c2167057d918a4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8a28e23428b83e831f64fb5595e3f3325638b3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8a28e23428b83e831f64fb5595e3f3325638b3f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eaa401c1d404b5e738760062b834c857e5bb73d5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec321305ef91729a4fdd402b4c904434cc76961f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/2/022d2e05e7dc72030560cf16012fc48050c09015" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/6/066c4ac35d67c1c609c7221239e28c0c30cdd3cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/0/205483cc319dc4de60e8ada636d960e5acbd8880" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/2898220b8da155fc68b5baea6fe0bb5a8c8ba1e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/d/2dc55955119dbbc18841e2fe90ac818a539ec350" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2fada1213964dd5172d831981aee16384a65a841" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/b/4bba1a869bcf39ec9a7b48c56da235de402e11e1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/5880a1510e21b9e74319923f3eef0d3c3a414ab6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/9/792978651b0d7c6e535e715e3c9a3be5bb42cd4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b7751255635c69564f9daccc2daac77a03919a98" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/ccbaa486ff8fc5f6be4179268732c9c06b8cd58d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/2/d2df7e007b4e5e04313275eb2c2167057d918a4e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/a/eaa401c1d404b5e738760062b834c857e5bb73d5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/c/ec321305ef91729a4fdd402b4c904434cc76961f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/joueur/Pirate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/joueur/Pirate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Canon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Canon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Des.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Des.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Plateau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partie/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/partie/Jeu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test_fonctionnels/TestPlateau.java" beforeDir="false" />
-    </list>
+    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="jeu normal fonctionne, case speciale bientot 19/03 vu avec la prof" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +110,7 @@
       <workItem from="1710526941069" duration="8180000" />
       <workItem from="1710580777835" duration="293000" />
       <workItem from="1710756001277" duration="7495000" />
-      <workItem from="1710838866391" duration="6369000" />
+      <workItem from="1710838866391" duration="6853000" />
     </task>
     <task id="LOCAL-00001" summary="creation">
       <created>1709714520380</created>
@@ -242,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710540912211</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="jeu normal fonctionne, case speciale bientot 19/03 vu avec la prof">
+      <created>1710845731766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710845731766</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +230,7 @@
     <MESSAGE value="avance joueur operationnel,&#10;tour classique sans case speciale operationnel jeu fonctionnel,&#10;&#10;&#10;reste a implementer partie 0 immobilisation et partie 4 effet case spéciales&#10;&#10;faire controler a la prof methode action case speciale qui est dans canon" />
     <MESSAGE value="grille dans le terminal op" />
     <MESSAGE value="case spéciale bientot finis , la ction dans case ou dans jeu ;( jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="case spéciale bientot finis , la ction dans case ou dans jeu ;( jsp" />
+    <MESSAGE value="jeu normal fonctionne, case speciale bientot 19/03 vu avec la prof" />
+    <option name="LAST_COMMIT_MESSAGE" value="jeu normal fonctionne, case speciale bientot 19/03 vu avec la prof" />
   </component>
 </project>
