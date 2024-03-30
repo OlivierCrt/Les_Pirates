@@ -15,7 +15,6 @@ public abstract class CaseSpeciale {
    public int getNumero() {
       return numero;
    }
-   public abstract Action actionCaseSpeciale(Pirate joueur1,Pirate joueur2);
 
 
 }

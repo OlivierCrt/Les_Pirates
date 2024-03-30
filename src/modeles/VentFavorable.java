@@ -7,10 +7,9 @@ public class VentFavorable extends CaseSpeciale{
         super(numero);
     }
 
-    @Override
-    public Action actionCaseSpeciale(Pirate joueur1, Pirate joueur2) {
+
+    public void actionVent(Pirate joueur1) {
         joueur1.setPostion(joueur1.getPostion() +10);
-        return Action.VENTFAVORABLE ;
 
 
     }

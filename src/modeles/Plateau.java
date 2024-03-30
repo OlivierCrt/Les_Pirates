@@ -7,7 +7,7 @@ public class Plateau {
     public Plateau() {
         SecureRandom secureRandom = new SecureRandom();
         caseSpeciales = new CaseSpeciale[6]; // 6 cases d'après le sujet
-        int[] valeursDejaGenerees = new int[30]; // Tableau pour stocker les valeurs déjà générées
+        int[] valeursDejaGenerees = new int[31]; // Tableau pour stocker les valeurs déjà générées
         int nombreDeValeursUniques = 0;
         int nombreCanon = 3; // Nombre de cases Canon
         int nombreVentFavorable = 3; // Nombre de cases VentFavorable

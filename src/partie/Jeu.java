@@ -3,9 +3,7 @@ package partie;
 import affichage.Affichage;
 import joueur.Nom;
 import joueur.Pirate;
-import modeles.Des;
-import modeles.Plateau;
-
+import modeles.*;
 
 
 public class Jeu {
@@ -99,14 +97,31 @@ public class Jeu {
 
     }
 
-  /  public void lancerCaseSpeciale(Pirate precedent){
+    public void lancerCaseSpeciale(Pirate precedent){
         boolean estDedans  = false;
         for (int i =0 ; i<getPlateau().getCaseSpeciales().length ; i++){
             if(getJoueurActuel().getPostion() == getPlateau().getCaseSpeciales()[i].getNumero()){
                 estDedans = true ;
-                action =
-                getAffichage().afficherString(getJoueurActuel().getNom() + " tu te trouves sur une case "+ getPlateau().getCaseSpeciales()[i].actionCaseSpeciale() +"!\n");
+                CaseSpeciale tempCase = getPlateau().getCaseSpeciales()[i] ;
+                if(tempCase instanceof Canon){
+                    getAffichage().afficherString("Tu es sur une case Canon "+getJoueurActuel().getNom()+"!");
+                    Canon tempCanon = (Canon) tempCase ;
+                    tempCanon.actionCanon(getJoueurActuel(),precedent);
+                    if( precedent.getPostion() < getJoueurActuel().getPostion()){
+                        getAffichage().afficherString("Ton adversaire est derrière toi tu lui envoies donc un boulet en pleine figure!\n");
+                    }
+                    else {
+                        getAffichage().afficherString("Ton adversaire croyait te distancer mais tu le rattrapes facilement!\n");
+                    }
 
+                }
+                else if (tempCase instanceof VentFavorable) {
+                    getAffichage().afficherString("Tu es sur une case vent favorable "+getJoueurActuel().getNom()+"!\n");
+                    VentFavorable tempVent = (VentFavorable) tempCase ;
+                    tempVent.actionVent(getJoueurActuel());
+                    getAffichage().afficherString("Coup de bol tu avances de 10 cases.\n");
+
+                }
             }
         }
 
@@ -128,7 +143,7 @@ public class Jeu {
                 //partie 2 avancer
                 avancerJoueur(getJoueurActuel(),resDes);
                 //partie 3 case sp à implementer
-                //lancerCaseSpeciale(JoueurPrecedent);
+                lancerCaseSpeciale(JoueurPrecedent);
 
             }
             else {
