@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="check affichage plateau avancé case sp">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2b967792f90f4d69bcd16d8f10ceaefd849ad9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d2b967792f90f4d69bcd16d8f10ceaefd849ad9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d936aabf44fc8681ab474f19964e86c89590d09c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc729d2b3fbd415980846087c4aca5ef22a568c9" beforeDir="false" />
+    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="case spéciales fonctionnelles, actualisation de l'affichage à régler">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e3e5d02cf56eb1d4f5b1005d26bc2be6af803f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/592c7b6dec99e5aad0ed55d504d4f1e061d18d36" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/592c7b6dec99e5aad0ed55d504d4f1e061d18d36" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6ffb7adde35163cd2265a0d36309c862c7f5e39a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd90fae069f30a2245dbfbb7012ea3c63f2e8723" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8a28e23428b83e831f64fb5595e3f3325638b3f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8a28e23428b83e831f64fb5595e3f3325638b3f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/c/dc729d2b3fbd415980846087c4aca5ef22a568c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/e/4e3e5d02cf56eb1d4f5b1005d26bc2be6af803f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/f/6ffb7adde35163cd2265a0d36309c862c7f5e39a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/d/cd90fae069f30a2245dbfbb7012ea3c63f2e8723" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Canon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Canon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/Plateau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modeles/VentFavorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/VentFavorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/InterfaceAffichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/InterfaceAffichage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modeles/Action.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/partie/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/partie/Jeu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +128,8 @@
       <workItem from="1710756001277" duration="7495000" />
       <workItem from="1710838866391" duration="6853000" />
       <workItem from="1711546853248" duration="94000" />
-      <workItem from="1711795749430" duration="1665000" />
+      <workItem from="1711795749430" duration="2147000" />
+      <workItem from="1711988930807" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="creation">
       <created>1709714520380</created>
@@ -225,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711546916543</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="case spéciales fonctionnelles, actualisation de l'affichage à régler">
+      <created>1711797548430</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711797548430</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +265,7 @@
     <MESSAGE value="case spéciale bientot finis , la ction dans case ou dans jeu ;( jsp" />
     <MESSAGE value="jeu normal fonctionne, case speciale bientot 19/03 vu avec la prof" />
     <MESSAGE value="check affichage plateau avancé case sp" />
-    <option name="LAST_COMMIT_MESSAGE" value="check affichage plateau avancé case sp" />
+    <MESSAGE value="case spéciales fonctionnelles, actualisation de l'affichage à régler" />
+    <option name="LAST_COMMIT_MESSAGE" value="case spéciales fonctionnelles, actualisation de l'affichage à régler" />
   </component>
 </project>

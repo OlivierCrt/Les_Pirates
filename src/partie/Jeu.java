@@ -97,6 +97,57 @@ public class Jeu {
 
     }
 
+
+
+
+
+    public void apercuPlateau() {
+        affichage.afficherString("Aperçu du plateau de jeu :\n");
+
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 5; j++) {
+                boolean joueurPresent = false;
+                int count = 0; // Compteur pour le nombre de joueurs sur la case
+                String nomJoueurPresent = "";
+                for (Pirate joueur : joueurs) {
+                    if (joueur.getPostion() == i * 5 + j + 1) {
+                        joueurPresent = true;
+                        count++;
+                        nomJoueurPresent = joueur.getNom().toString();
+                    }
+                }
+                // Affichage de la case avec ou sans joueur
+                if (count > 1) { // Deux pirates sur la même case
+                    affichage.afficherString("[\u001B[33mBJ \u001B[0m]");
+                } else if (joueurPresent) {
+                    if (nomJoueurPresent.equals("BILL")) {
+                        affichage.afficherString("[\u001B[34m" + nomJoueurPresent + " \u001B[0m]");
+                    } else {
+                        affichage.afficherString("[\u001B[31m" + nomJoueurPresent + " \u001B[0m]");
+                    }
+                } else {
+                    // Vérification pour les cases spéciales
+                    boolean caseSpeciale = false;
+                    for (CaseSpeciale caseSpec : plateau.getCaseSpeciales()) {
+                        if (caseSpec.getNumero() == i * 5 + j + 1) {
+                            caseSpeciale = true;
+                            if (caseSpec instanceof Canon) {
+                                affichage.afficherString("[\u001B[35mC \u001B[0m]"); // Case canon
+                            } else if (caseSpec instanceof VentFavorable) {
+                                affichage.afficherString("[\u001B[36mV \u001B[0m]"); // Case vent favorable
+                            }
+                        }
+                    }
+                    if (!caseSpeciale) {
+                        affichage.afficherString("[     ]");
+                    }
+                }
+            }
+            affichage.afficherString("\n"); // Passer à la ligne suivante après chaque ligne du plateau
+        }
+    }
+
+
     public void lancerCaseSpeciale(Pirate precedent){
         boolean estDedans  = false;
         for (int i =0 ; i<getPlateau().getCaseSpeciales().length ; i++){
@@ -135,7 +186,7 @@ public class Jeu {
         Pirate JoueurPrecedent=joueurs[1];
         //Tour de jeu
         while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
-            getAffichage().afficherApercuPlateau(getJoueurs()); // Afficher l'aperçu du plateau
+            apercuPlateau();
             // Partie 0 de mon schema immobilisation à implementer--> OK
             if (joueurActuel.getTourImmobile()  ==  0) {
                 //Partie 1

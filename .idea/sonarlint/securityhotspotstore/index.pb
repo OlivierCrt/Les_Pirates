@@ -16,8 +16,6 @@ C
 src/partie/Jeu.java,d\9\d936aabf44fc8681ab474f19964e86c89590d09c
 C
 src/joueur/Nom.java,f\a\fa8060679e47a877e59ac4a7c6eb0bc40c227952
-G
-src/modeles/Action.java,6\f\6ffb7adde35163cd2265a0d36309c862c7f5e39a
 M
 src/modeles/CaseSpeciale.java,0\d\0d2b967792f90f4d69bcd16d8f10ceaefd849ad9
 D
@@ -175,8 +173,6 @@ Q.idea/sonarlint/securityhotspotstore/b/b/bbf202272a96de5cd6b6828ffdc55fb3ce4528
 Å
 Q.idea/sonarlint/securityhotspotstore/4/7/47baed499c28966a98bd50677b3bb0a8a6538c2f,d\c\dc816e0d0c9f185d4c5f551dbb4f06e9693be688
 Å
-Q.idea/sonarlint/securityhotspotstore/d/c/dc729d2b3fbd415980846087c4aca5ef22a568c9,4\e\4e3e5d02cf56eb1d4f5b1005d26bc2be6af803f0
-Å
 Q.idea/sonarlint/securityhotspotstore/e/1/e16db763769592ba9181c74426b184a8eef29f69,5\7\5791a68b4e5ed461ae7f403b292ad4f230beeada
 Å
 Q.idea/sonarlint/securityhotspotstore/2/5/25b2afedf0dcf16626ed5ec35ed002609f047780,3\3\331d34ef83e0c61a9d6dfd138a24ac8cb7d53b15
@@ -194,8 +190,6 @@ G.idea/sonarlint/issuestore/d/1/d1d77fd001ded6904fb9a273ceb2f4f6cb8cbdb6,c\b\cb
 Q.idea/sonarlint/securityhotspotstore/8/a/8a6dae537be9f47878c6964c6ee40cab0ca75e28,d\c\dca526fd278f47862db2c8e8d0e3d6de031f13a8
 w
 G.idea/sonarlint/issuestore/d/a/da066354a37733f944c877069ce500e794ff1142,f\3\f320382f3c94275c9ccc4b950ebf1ee7a5a14dee
-w
-G.idea/sonarlint/issuestore/d/c/dc729d2b3fbd415980846087c4aca5ef22a568c9,c\d\cd90fae069f30a2245dbfbb7012ea3c63f2e8723
 Å
 Q.idea/sonarlint/securityhotspotstore/c/c/cc74b7478adddea416cfb30835d5061b3cfd78fc,7\f\7fc40224b0b326450a4c8c79330faafcf6382738
 w

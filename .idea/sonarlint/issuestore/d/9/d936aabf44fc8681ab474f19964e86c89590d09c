@@ -1,20 +1,22 @@
 
 h
-java:S1192>"KDefine a constant instead of duplicating this literal "Le pirate " 3 times.(ÚÄ”«8à›Ãøè1
-s	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ô¡Óúÿÿÿÿ8â›Ãøè1
+java:S1192>"KDefine a constant instead of duplicating this literal "Le pirate " 3 times.(ÚÄ”«8ÚÜ®Ôé1
+s	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ô¡Óúÿÿÿÿ8ÛÜ®Ôé1
 T
-java:S1117"7Rename "des" which hides the field declared at line 13.(—Êÿ8ÿ›Ãøè1
+java:S1117"7Rename "des" which hides the field declared at line 13.(—Êÿ8òÜ®Ôé1
 Z
-java:S1117"=Rename "affichage" which hides the field declared at line 11.(Æ®Û8‚œÃøè1
+java:S1117"=Rename "affichage" which hides the field declared at line 11.(Æ®Û8ôÜ®Ôé1
 W
-java:S1117";Rename "plateau" which hides the field declared at line 12.(æåŒm8ƒœÃøè1
+java:S1117";Rename "plateau" which hides the field declared at line 12.(æåŒm8õÜ®Ôé1
 ]
-java:S1117";Rename "joueurs" which hides the field declared at line 10.(ÛäĞşÿÿÿÿ8„œÃøè1
-Z
-java:S1854h"=Remove this useless assignment to local variable "estDedans".(è¡ºÁ8°œÃøè1
-P
-java:S1481e".Remove this unused "estDedans" local variable.(ÃÅ’ìùÿÿÿÿ8´œÃøè1
-e
-java:S6201j"HReplace this instanceof check and cast with 'instanceof Canon tempCanon'(¼¬âê8¦ŠÖøè1
-q
-java:S6201v"OReplace this instanceof check and cast with 'instanceof VentFavorable tempVent'(íÒá¶úÿÿÿÿ8©ŠÖøè1
+java:S1117";Rename "joueurs" which hides the field declared at line 10.(ÛäĞşÿÿÿÿ8öÜ®Ôé1
+o
+java:S3776h"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(áÁ× 8‹İ®Ôé1
+[
+java:S1854›"=Remove this useless assignment to local variable "estDedans".(è¡ºÁ8™İ®Ôé1
+Q
+java:S1481˜".Remove this unused "estDedans" local variable.(ÃÅ’ìùÿÿÿÿ8›İ®Ôé1
+f
+java:S6201"HReplace this instanceof check and cast with 'instanceof Canon tempCanon'(¼¬âê8¢İ®Ôé1
+r
+java:S6201©"OReplace this instanceof check and cast with 'instanceof VentFavorable tempVent'(íÒá¶úÿÿÿÿ8«İ®Ôé1

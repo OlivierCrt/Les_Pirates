@@ -1,5 +1,4 @@
 package affichage;
-import modeles.CaseSpeciale;
 import joueur.Pirate;
 import java.util.Scanner;
 public final class Affichage implements InterfaceAffichage {
@@ -24,12 +23,7 @@ public final class Affichage implements InterfaceAffichage {
 
     }
 
-    @Override
-    public void afficherCase(CaseSpeciale c) {
-        System.out.println("case numéro "+ c.getNumero());
 
-
-    }
 
     @Override
     public void afficherToucheSaisie(){
@@ -51,36 +45,54 @@ public final class Affichage implements InterfaceAffichage {
     }
 
     @Override
+    public void afficherApercuPlateau(Pirate[] joueurs) {}
+    /*
     public void afficherApercuPlateau(Pirate[] joueurs) {
+
         String nomjoueurPresent ="";
         System.out.println("Aperçu du plateau de jeu :");
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 boolean joueurpresent = false;
+                int count = 0; // Compteur pour le nombre de joueurs sur la case
                 for (Pirate joueur : joueurs) {
                     if (joueur.getPostion() == i * 5 + j + 1) {
                         joueurpresent = true;
+                        count++;
                         nomjoueurPresent = String.valueOf(joueur.getNom());
-                        break;
                     }
                 }
                 // Affichage de la case avec ou sans joueur
-                if (joueurpresent) {
-                    if(nomjoueurPresent == "BILL"){
-                    System.out.print("[\u001B[34m" + nomjoueurPresent + " \u001B[0m]");}
-                    else{
-                        System.out.print("[\u001B[31m" + nomjoueurPresent + " \u001B[0m]");}
-
+                if (count > 1) { // Deux pirates sur la même case
+                    System.out.print("[\u001B[33mBJ \u001B[0m]");
+                } else if (joueurpresent) {
+                    if (nomjoueurPresent.equals("BILL")) {
+                        System.out.print("[\u001B[34m" + nomjoueurPresent + " \u001B[0m]");
+                    } else {
+                        System.out.print("[\u001B[31m" + nomjoueurPresent + " \u001B[0m]");
                     }
-
-
-                else {
-                    System.out.print("[     ]");
+                } else {
+                    // Vérification pour les cases spéciales
+                    boolean caseSpeciale = false;
+                    for (CaseSpeciale caseSpec : plateau.getCaseSpeciales()) {
+                        if (caseSpec.getNumero() == i * 5 + j + 1) {
+                            caseSpeciale = true;
+                            if (caseSpec instanceof Canon) {
+                                System.out.print("[\u001B[35mC \u001B[0m]"); // Case canon
+                            } else if (caseSpec instanceof VentFavorable) {
+                                System.out.print("[\u001B[36mV \u001B[0m]"); // Case vent favorable
+                            }
+                        }
+                    }
+                    if (!caseSpeciale) {
+                        System.out.print("[     ]");
+                    }
                 }
             }
             System.out.println(); // Passer à la ligne suivante après chaque ligne du plateau
         }
-    }
+    }*/
+
 
 }
