@@ -1,7 +1,7 @@
 package modeles;
 import java.security.SecureRandom;
 public class Des {
-    private int nombreFace ;
+    private final int nombreFace ;
 
     public Des(int nombreFace){
         this.nombreFace = nombreFace;

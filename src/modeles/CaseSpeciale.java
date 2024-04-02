@@ -1,11 +1,10 @@
 package modeles;
-import joueur.Pirate ;
 
 
 
 public abstract class CaseSpeciale {
    //attributs
-   private int numero ;
+   private final int numero ;
    protected CaseSpeciale(int numero){
       this.numero = numero ;
 

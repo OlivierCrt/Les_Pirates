@@ -2,7 +2,7 @@ package modeles;
 import java.security.SecureRandom;
 
 public class Plateau {
-    private CaseSpeciale[] caseSpeciales;
+    private final CaseSpeciale[] caseSpeciales;
 
     public Plateau() {
         SecureRandom secureRandom = new SecureRandom();

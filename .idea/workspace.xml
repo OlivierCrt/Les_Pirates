@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="apercuPlateau mis dans jeu comme signifié en tp&#10;, petit problème: quand un joueur depasse la derniere case et reviens sur ces pas il disparait du plateau">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5ae88448fb56c279c48976ee7e5b8ad9b0d82e05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c49959b422b9c249c67d0542f4fd4d1e693cd773" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/a/5ae88448fb56c279c48976ee7e5b8ad9b0d82e05" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/4/c49959b422b9c249c67d0542f4fd4d1e693cd773" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5e19643e-9b79-4a8f-87fe-0979b8aeeb40" name="Changes" comment="correction aperçu">
+      <change beforePath="$PROJECT_DIR$/src/affichage/Affichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/Affichage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/affichage/InterfaceAffichage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/affichage/InterfaceAffichage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modeles/CaseSpeciale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partie/Jeu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/partie/Jeu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +120,7 @@
       <workItem from="1711795749430" duration="2147000" />
       <workItem from="1711988930807" duration="1303000" />
       <workItem from="1711991767869" duration="11000" />
+      <workItem from="1712050752013" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="creation">
       <created>1709714520380</created>
@@ -236,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711990232848</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="correction aperçu">
+      <created>1712051333308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712051333308</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +272,7 @@
     <MESSAGE value="check affichage plateau avancé case sp" />
     <MESSAGE value="case spéciales fonctionnelles, actualisation de l'affichage à régler" />
     <MESSAGE value="apercuPlateau mis dans jeu comme signifié en tp&#10;, petit problème: quand un joueur depasse la derniere case et reviens sur ces pas il disparait du plateau" />
-    <option name="LAST_COMMIT_MESSAGE" value="apercuPlateau mis dans jeu comme signifié en tp&#10;, petit problème: quand un joueur depasse la derniere case et reviens sur ces pas il disparait du plateau" />
+    <MESSAGE value="correction aperçu" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction aperçu" />
   </component>
 </project>

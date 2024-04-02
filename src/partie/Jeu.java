@@ -18,17 +18,17 @@ public class Jeu {
 
     //getters setters constructeur
     public Jeu(){
-        Des des = new Des(6);
-        Affichage affichage = new Affichage();
-        Plateau plateau = new Plateau();
-        Pirate[] joueurs = new Pirate[2];
-        joueurs[0] = new Pirate(Nom.BILL , 5);
-        joueurs[1] = new Pirate(Nom.JACK, 5) ;
-        this.affichage = affichage;
-        this.plateau = plateau;
-        this.joueurs = joueurs;
-        this.des = des ;
-        this.joueurActuel = joueurs[0] ; //on commence avec le joueur 1
+        Des desduJeu = new Des(6);
+        Affichage affichageduJeu = new Affichage();
+        Plateau plateauduJeu = new Plateau();
+        Pirate[] joueursdujeu = new Pirate[2];
+        joueursdujeu[0] = new Pirate(Nom.BILL , 5);
+        joueursdujeu[1] = new Pirate(Nom.JACK, 5) ;
+        this.affichage = affichageduJeu;
+        this.plateau = plateauduJeu;
+        this.joueurs = joueursdujeu;
+        this.des = desduJeu ;
+        this.joueurActuel = joueursdujeu[0] ; //on commence avec le joueur 1
 
 
     }
@@ -149,10 +149,8 @@ public class Jeu {
 
 
     public void lancerCaseSpeciale(Pirate precedent){
-        boolean estDedans  = false;
         for (int i =0 ; i<getPlateau().getCaseSpeciales().length ; i++){
             if(getJoueurActuel().getPostion() == getPlateau().getCaseSpeciales()[i].getNumero()){
-                estDedans = true ;
                 CaseSpeciale tempCase = getPlateau().getCaseSpeciales()[i] ;
                 if(tempCase instanceof Canon){
                     getAffichage().afficherString("Tu es sur une case Canon "+getJoueurActuel().getNom()+"!");
