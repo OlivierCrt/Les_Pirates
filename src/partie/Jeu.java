@@ -118,7 +118,7 @@ public class Jeu {
                 }
                 // Affichage de la case avec ou sans joueur
                 if (count > 1) { // Deux pirates sur la même case
-                    affichage.afficherString("[\u001B[33mBJ \u001B[0m]");
+                    affichage.afficherString("[\u001B[33m B&J \u001B[0m]");
                 } else if (joueurPresent) {
                     if (nomJoueurPresent.equals("BILL")) {
                         affichage.afficherString("[\u001B[34m" + nomJoueurPresent + " \u001B[0m]");
@@ -132,9 +132,9 @@ public class Jeu {
                         if (caseSpec.getNumero() == i * 5 + j + 1) {
                             caseSpeciale = true;
                             if (caseSpec instanceof Canon) {
-                                affichage.afficherString("[\u001B[35mC \u001B[0m]"); // Case canon
+                                affichage.afficherString("[\u001B[35m  C  \u001B[0m]"); // Case canon
                             } else if (caseSpec instanceof VentFavorable) {
-                                affichage.afficherString("[\u001B[36mV \u001B[0m]"); // Case vent favorable
+                                affichage.afficherString("[\u001B[36m  V  \u001B[0m]"); // Case vent favorable
                             }
                         }
                     }
