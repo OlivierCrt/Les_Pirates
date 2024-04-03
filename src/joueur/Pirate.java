@@ -4,13 +4,13 @@ package joueur;
 public class Pirate {
     private final Nom nom;
     private int vies;
-    private int postion;
+    private int position;
     private int tourImmobile;
 
     public Pirate(Nom nom, int vies) {
         this.nom = nom;
         this.vies = vies;
-        this.postion = 1;
+        this.position = 1;
         this.tourImmobile = 0;
     }
 
@@ -26,12 +26,12 @@ public class Pirate {
         this.tourImmobile = tourImmobile;
     }
 
-    public int getPostion() {
-        return postion;
+    public int getPosition() {
+        return position;
     }
 
-    public void setPostion(int positionNouvelle) {
-        this.postion = positionNouvelle;
+    public void setPosition(int positionNouvelle) {
+        this.position = positionNouvelle;
     }
 
     public int getVies() {

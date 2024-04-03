@@ -9,10 +9,10 @@ public class VentFavorable extends CaseSpeciale {
 
 
     public void actionVent(Pirate joueur1) {
-        if (joueur1.getPostion() <= 20) {
-            joueur1.setPostion(joueur1.getPostion() + 10);
+        if (joueur1.getPosition() <= 20) {
+            joueur1.setPosition(joueur1.getPosition() + 10);
         } else {
-            joueur1.setPostion(60 - joueur1.getPostion() - 10);
+            joueur1.setPosition(60 - joueur1.getPosition() - 10);
         }
 
 

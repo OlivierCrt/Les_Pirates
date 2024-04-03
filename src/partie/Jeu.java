@@ -73,7 +73,7 @@ public class Jeu {
     }
 
     public boolean verifierGagnant(Pirate joueur) {
-        if (joueur.getPostion() == 30) {
+        if (joueur.getPosition() == 30) {
             getAffichage().afficherGagnant(joueur.getNom().toString());
             return true;
         }
@@ -89,38 +89,38 @@ public class Jeu {
     }
 
     public void avancerJoueur(Pirate joueur, int avance) {
-        if (joueur.getPostion() + avance <= 30) {
-            joueur.setPostion(joueur.getPostion() + avance);
+        if (joueur.getPosition() + avance <= 30) {
+            joueur.setPosition(joueur.getPosition() + avance);
         } else {
-            joueur.setPostion(60 - (joueur.getPostion() + avance));
+            joueur.setPosition(60 - (joueur.getPosition() + avance));
         }
-        getAffichage().afficherAvance(getJoueurActuel().getNom().toString(),avance);
-        getAffichage().afficheCase(joueur.getPostion());
+        getAffichage().afficherAvance(getJoueurActuel().getNom().toString(), avance);
+        getAffichage().afficheCase(joueur.getPosition());
 
 
     }
 
 
-    private int nombreDeJoueursSurCase(int ligne, int colonne) {
+    public int nombreDeJoueursSurCase(int ligne, int colonne) {
         int count = 0;
         for (Pirate joueur : joueurs) {
-            if (joueur.getPostion() == ligne * 5 + colonne + 1) {
+            if (joueur.getPosition() == ligne * 5 + colonne + 1) {
                 count++;
             }
         }
         return count;
     }
 
-    private String nomDuJoueurSurCase(int ligne, int colonne) {
+    public String nomDuJoueurSurCase(int ligne, int colonne) {
         for (Pirate joueur : joueurs) {
-            if (joueur.getPostion() == ligne * 5 + colonne + 1) {
+            if (joueur.getPosition() == ligne * 5 + colonne + 1) {
                 return joueur.getNom().toString();
             }
         }
         return "";
     }
 
-    private void splitApercuPlateau(int ligne, int colonne) {
+    public void splitApercuPlateau(int ligne, int colonne) {
         boolean caseSpeciale = false;
         for (CaseSpeciale caseSpec : plateau.getCaseSpeciales()) {
             if (caseSpec.getNumero() == ligne * 5 + colonne + 1) {
@@ -133,48 +133,48 @@ public class Jeu {
             }
         }
         if (!caseSpeciale) {
-            affichage.afficherString("[     ]");
+            getAffichage().afficherCrochet();
         }
     }
 
     public void apercuPlateau() {
-        affichage.afficherCrochet();
+        getAffichage().afficherapercu();
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 int nombreDeJoueurs = nombreDeJoueursSurCase(i, j);
                 if (nombreDeJoueurs > 1) {
-                    affichage.afficherBJ();
+                    getAffichage().afficherBJ();
                 } else if (nombreDeJoueurs == 1) {
                     String nomJoueur = nomDuJoueurSurCase(i, j);
-                        affichage.afficherNom(nomJoueur);
+                    getAffichage().afficherNom(nomJoueur);
 
                 } else {
                     splitApercuPlateau(i, j);
                 }
             }
-            affichage.afficherString("\n");
+            getAffichage().afficherString("\n");
         }
     }
 
 
     public void lancerCaseSpeciale(Pirate precedent) {
         for (int i = 0; i < getPlateau().getCaseSpeciales().length; i++) {
-            if (getJoueurActuel().getPostion() == getPlateau().getCaseSpeciales()[i].getNumero()) {
+            if (getJoueurActuel().getPosition() == getPlateau().getCaseSpeciales()[i].getNumero()) {
                 CaseSpeciale tempCase = getPlateau().getCaseSpeciales()[i];
                 if (tempCase instanceof Canon tempCanon) {
-                    getAffichage().afficherString("Tu es sur une case Canon " + getJoueurActuel().getNom() + "!\n");
+                    getAffichage().afficherCanon(getJoueurActuel().getNom().toString());
                     tempCanon.actionCanon(getJoueurActuel(), precedent);
-                    if (precedent.getPostion() < getJoueurActuel().getPostion()) {
-                        getAffichage().afficherString("Ton adversaire est derrière toi tu lui envoies donc un boulet en pleine figure!\n");
+                    if (precedent.getPosition() < getJoueurActuel().getPosition()) {
+                        getAffichage().afficherBoulet();
                     } else {
-                        getAffichage().afficherString("\u001B[32mTon adversaire croyait te distancer mais tu le rattrapes facilement!\u001B[0m\n");
+                        getAffichage().afficherDistancage();
                     }
 
                 } else if (tempCase instanceof VentFavorable tempVent) {
-                    getAffichage().afficherString("Tu es sur une case vent favorable " + getJoueurActuel().getNom() + "!\n");
+                    getAffichage().afficherVent(getJoueurActuel().getNom().toString());
                     tempVent.actionVent(getJoueurActuel());
-                    getAffichage().afficherString("\u001B[32mCoup de bol tu avances de 10 cases.\n\u001B[0m");
+                    getAffichage().afficherFavo();
 
                 }
             }
@@ -186,32 +186,26 @@ public class Jeu {
     public void lancerJeu() {
         getAffichage().afficherDebutPartie();
 
-        //////////////////////////////////////////
+
         Pirate joueurPrecedent = joueurs[1];
         //Tour de jeu
         while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
             apercuPlateau();
-            // Partie 0 de mon schema immobilisation à implementer--> OK
             if (joueurActuel.getTourImmobile() == 0) {
-                //Partie 1
                 int resDes = lancerDes(getJoueurActuel());
-                //partie 2 avancer
                 avancerJoueur(getJoueurActuel(), resDes);
-                //partie 3 case sp à implementer
                 lancerCaseSpeciale(joueurPrecedent);
 
             } else {
-                getAffichage().afficherString("\u001B[31mNON " + getJoueurActuel().getNom() + " tu es immobilisé pour ce tour!\n\u001B[0m");
+                getAffichage().afficherImmo(getJoueurActuel().getNom().toString());
                 getJoueurActuel().setTourImmobile(getJoueurActuel().getTourImmobile() - 1);
-                getAffichage().afficherString("Il te reste encore " + getJoueurActuel().getTourImmobile() + " tour(s) à attendre, patience...");
+                getAffichage().afficherAttente(getJoueurActuel().getTourImmobile()); //
             }
 
 
-            //fin de tour
             joueurPrecedent = getJoueurActuel();
             changementJoueuractuel();
         }
-        //////////////////////////////////////////
         getAffichage().afficherFinPartie();
 
     }
