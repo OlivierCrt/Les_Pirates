@@ -63,7 +63,7 @@ public class Jeu {
     //methodes
     //voir diag de sequence
     public int lancerDes(Pirate joueur) {
-        getAffichage().afficherString("Le pirate " + joueur.getNom() + " s'aprette a à lancer les dès :\n");
+        getAffichage().afficherDes(joueur.getNom().toString());
         getAffichage().touchePress();
         int res = getDes().resultatDes();
         getAffichage().afficherResultatDes(res);
@@ -74,7 +74,7 @@ public class Jeu {
 
     public boolean verifierGagnant(Pirate joueur) {
         if (joueur.getPostion() == 30) {
-            getAffichage().afficherString("Le pirate " + joueur.getNom() + " a gagné!\n");
+            getAffichage().afficherGagnant(joueur.getNom().toString());
             return true;
         }
         return false;
@@ -94,8 +94,8 @@ public class Jeu {
         } else {
             joueur.setPostion(60 - (joueur.getPostion() + avance));
         }
-        getAffichage().afficherString("Le pirate " + getJoueurActuel().getNom() + " avance de " + avance + " cases\n");
-        getAffichage().afficherString("Il se trouve desormais sur la case numero " + joueur.getPostion() + "\n");
+        getAffichage().afficherAvance(getJoueurActuel().getNom().toString(),avance);
+        getAffichage().afficheCase(joueur.getPostion());
 
 
     }
@@ -126,9 +126,9 @@ public class Jeu {
             if (caseSpec.getNumero() == ligne * 5 + colonne + 1) {
                 caseSpeciale = true;
                 if (caseSpec instanceof Canon) {
-                    affichage.afficherString("[\u001B[35m  C  \u001B[0m]");
+                    affichage.afficherC();
                 } else if (caseSpec instanceof VentFavorable) {
-                    affichage.afficherString("[\u001B[36m  V  \u001B[0m]");
+                    affichage.afficherV();
                 }
             }
         }
@@ -138,20 +138,17 @@ public class Jeu {
     }
 
     public void apercuPlateau() {
-        affichage.afficherString("Aperçu du plateau de jeu :\n");
+        affichage.afficherCrochet();
 
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 5; j++) {
                 int nombreDeJoueurs = nombreDeJoueursSurCase(i, j);
                 if (nombreDeJoueurs > 1) {
-                    affichage.afficherString("[\u001B[33m B&J \u001B[0m]");
+                    affichage.afficherBJ();
                 } else if (nombreDeJoueurs == 1) {
                     String nomJoueur = nomDuJoueurSurCase(i, j);
-                    if (nomJoueur.equals("BILL")) {
-                        affichage.afficherString("[\u001B[34m" + nomJoueur + " \u001B[0m]");
-                    } else {
-                        affichage.afficherString("[\u001B[31m" + nomJoueur + " \u001B[0m]");
-                    }
+                        affichage.afficherNom(nomJoueur);
+
                 } else {
                     splitApercuPlateau(i, j);
                 }
