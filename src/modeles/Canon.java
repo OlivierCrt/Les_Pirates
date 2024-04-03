@@ -12,13 +12,17 @@ public final class Canon extends CaseSpeciale {
 
 
         public void actionCanon(Pirate joueurActuel , Pirate joueur2){
+        int positionJoueurActuel = joueurActuel.getPosition() ;
+        int positionJoueur2 = joueur2.getPosition();
+        int viesJoueur2 = joueur2.getVies() ;
 
-        if (joueurActuel.getPosition() < joueur2.getPosition()){
-            joueurActuel.setPosition(joueur2.getPosition());//Le joueur actuel rejoint le joueur 2
+
+        if (positionJoueurActuel < positionJoueur2){
+            joueurActuel.setPosition(positionJoueur2);
         }
         else{
-            joueur2.setTourImmobile(3);//immobilise le j2 avec un boulet
-            joueur2.setVies(joueur2.getVies()-2);
+            joueur2.setTourImmobile(3);
+            joueur2.setVies(viesJoueur2-2);
         }
 
 

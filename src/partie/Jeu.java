@@ -188,10 +188,10 @@ public class Jeu {
 
 
         Pirate joueurPrecedent = joueurs[1];
-        //Tour de jeu
-        while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1])) {
+
+        do {
             apercuPlateau();
-            if (joueurActuel.getTourImmobile() == 0) {
+            if (getJoueurActuel().getTourImmobile() == 0) {
                 int resDes = lancerDes(getJoueurActuel());
                 avancerJoueur(getJoueurActuel(), resDes);
                 lancerCaseSpeciale(joueurPrecedent);
@@ -205,7 +205,7 @@ public class Jeu {
 
             joueurPrecedent = getJoueurActuel();
             changementJoueuractuel();
-        }
+        }while (!verifierGagnant(getJoueurs()[0]) && !verifierGagnant(getJoueurs()[1]));
         getAffichage().afficherFinPartie();
 
     }
