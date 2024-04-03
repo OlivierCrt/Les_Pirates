@@ -1,5 +1,7 @@
 package affichage;
+
 import java.util.Scanner;
+
 public final class Affichage implements InterfaceAffichage {
 
     @Override
@@ -10,7 +12,7 @@ public final class Affichage implements InterfaceAffichage {
 
     @Override
     public void afficherFinPartie() {
-        System.out.println("Fin du jeu!\n");
+        System.out.println("\u001B[32mFin du jeu!\u001B[0m\n");
 
     }
 
@@ -23,22 +25,19 @@ public final class Affichage implements InterfaceAffichage {
     }
 
 
-
-
     @Override
-    public void afficherString(String phrase){
+    public void afficherString(String phrase) {
         System.out.print(phrase);
     }
 
 
     @Override
-    public void touchePress(){
+    public void touchePress() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Appuyez sur entrée pour continuer...");
-        scanner.nextLine(); // l'utilisateur appuie sur "Entrée"
+        scanner.nextLine();
 
     }
-
 
 
 }
