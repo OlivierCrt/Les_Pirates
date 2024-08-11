@@ -1,12 +1,13 @@
 # les_pirates
 
-Le diagramme de classe n'a pas les meme notation qu en cours, public est une case verte, private rouge et protected orange.
-La classe abstraite a une petit A difiicile a voir(le logiciel utilisé n'était surement pas le meilleur snif.
+Description of special squares :
 
-Description classes spéciales :
+"Favorable wind": When the player falls on it, he advances 10 squares.
 
-Vent favorable: Quand le joueur tombe dessus il avance de 10 cases.
+"Cannon": When the player falls on it, there are two cases:
+- The opponent is in front, he joins him.
+- If the opponent is behind or on the same square, we send him a cannonball which immobilizes him for 3 turns and causes him to lose 2 lives.
 
-Canon : Quand le joueur tombe dessus deux cas:
-- L'adversaire est devant , il le rejoint.
-- L'adversaire est derriere ou sur la meme case, on lui envoie un boulet qui l'immobilise 3 tours et lui fait perdre 2 vies.
+
+Project to create a game in Java, to consolidate all the notions seen in class, e.g. abstract classes, inheritance, interfaces, etc.
+The choice of classes, how they function and how they are organized is free, but they must be logical with the various diagrams. 
