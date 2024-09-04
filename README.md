@@ -1,4 +1,5 @@
 # les_pirates
+Execute "Controle" to start the game.
 The aim is to reach the last square before your opponent. The players are bill and jack
 
 
