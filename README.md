@@ -1,4 +1,6 @@
 # les_pirates
+The aim is to reach the last square before your opponent. The players are bill and jack
+
 
 Description of special squares :
 
